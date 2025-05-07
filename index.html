@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #333366;
+        }
+        label, input, button {
+            margin: 5px;
+        }
+        #resultado, #resultadoVal {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercícios Web - HTML, CSS e Javascript</h1>
+
+    <!-- Exercício 1 -->
+    <section>
+        <h2>Exercício 1 - Frase em HTML</h2>
+        <p><i>A minha primeira página em HTML</i></p>
+    </section>
+
+    <!-- Exercício 2 -->
+    <section>
+        <h2>Exercício 2 - Negrito em HTML</h2>
+        <p><i>A minha primeira página em <b>HTML</b></i></p>
+    </section>
+
+    <!-- Exercício 3 -->
+    <section>
+        <h2>Exercício 3 - Título Substituído e Submetido</h2>
+        <p><u>Classificações dos alunos no 1º Período</u></p>
+        <h1><u>Classificações dos alunos no 1º Período</u></h1>
+        <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+    </section>
+
+    <!-- Exercício 4 -->
+    <section>
+        <h2>Exercício 4 - Imagem da Web</h2>
+        <img src="https://via.placeholder.com/150" alt="Imagem Externa">
+    </section>
+
+    <!-- Exercício 5 -->
+    <section>
+        <h2>Exercício 5 - Exemplo de Script</h2>
+        <script>
+            document.write("O meu primeiro exercício em Javascript !");
+        </script>
+    </section>
+
+    <!-- Exercício 6 -->
+    <section>
+        <h2>Exercício 6 - Script Externo</h2>
+        <script src="codigofonte.js"></script>
+    </section>
+
+    <!-- Exercício 7 -->
+    <section>
+        <h2>Exercício 7 - Variáveis e Mensagens</h2>
+        <script>
+            var intro = "Caro Aluno";
+            var unidade = "Bem-vindo à unidade curricular de LSSW";
+            var versao = 1.0;
+            document.write(intro + " " + unidade + " " + versao);
+        </script>
+    </section>
+
+    <!-- Exercício 8 - Formulário de Cálculo -->
+    <section>
+        <h2>Exercício 8 - Calculadora</h2>
+        <form id="minhacalculadora">
+            <label for="num1">Número 1:</label>
+            <input type="number" id="num1"><br>
+            <label for="num2">Número 2:</label>
+            <input type="number" id="num2"><br><br>
+            <button type="button" onclick="calcular('soma')">Soma</button>
+            <button type="button" onclick="calcular('subtracao')">Subtração</button>
+            <button type="button" onclick="calcular('multiplicacao')">Multiplicação</button>
+            <button type="button" onclick="calcular('divisao')">Divisão</button>
+        </form>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Exercício 9 - Validação de Texto -->
+    <section>
+        <h2>Exercício 9 - Validação de Texto</h2>
+        <form id="formtexto">
+            <label for="texto">Texto:</label>
+            <input type="text" id="texto"><br>
+            <label for="carater">Caráter a verificar:</label>
+            <input type="text" id="carater" maxlength="1"><br>
+            <label for="tamMin">Tamanho mínimo:</label>
+            <input type="number" id="tamMin"><br><br>
+            <button type="button" onclick="validarTudo()">Validar</button>
+        </form>
+        <p id="resultadoVal"></p>
+    </section>
+
+    <script src="calculadora.js"></script>
+    <script src="validacoes.js"></script>
+</body>
+</html>
